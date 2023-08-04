@@ -1,0 +1,26 @@
+GET http://localhost:4000/quote
+
+###
+GET http://localhost:4000/quote/3
+
+###
+POST http://localhost:4000/quote
+Content-Type: application/json
+
+{
+    "name":"Person 2",
+    "qoute":"Quote Person 2"
+}
+
+###
+PATCH  http://localhost:4000/quote/3
+Content-Type: application/json
+
+{
+    "name":"Person 3",
+    "qoute":"Quote Person 3"
+}
+
+###
+DELETE   http://localhost:4000/quote/3
+
